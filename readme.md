@@ -1,4 +1,4 @@
-# Smoke [![Build Status](https://secure.travis-ci.org/ptdorf/smoke.png)](http://travis-ci.org/ptdorf/smoke)
+# Smoke [![Build Status](https://travis-ci.org/ptdorf/smoke.png?branch=master)](http://travis-ci.org/ptdorf/smoke)
 
 Boilerplace for PHP libraries.
 
