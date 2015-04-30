@@ -1,21 +1,20 @@
 {
-    "name": "jpedro-barbosa/smoke",
-    "type": "library",
-    "description": "Boilerplate structuture for PHP libraries",
-    "keywords": [
-        "php",
-        "library",
-        "boilerplate"
-    ],
-    "require": {
-        "php": ">=5.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.8.*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Smoke": "src"
-        }
+  "name": "braindead/php-smoke",
+  "description": "Boilerplate structuture for PHP libraries",
+  "keywords": [
+    "php",
+    "library",
+    "boilerplate"
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Smoke": "src"
     }
+  }
 }

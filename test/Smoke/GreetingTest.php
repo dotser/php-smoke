@@ -7,7 +7,7 @@ class GreetingTest extends PHPUnit_Framework_TestCase
 
     public function setup()
     {
-        $this->object = new Greeting;
+        $this->object = new Greeting();
     }
 
     public function testEmpty()
