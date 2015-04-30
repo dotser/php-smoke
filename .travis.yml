@@ -6,10 +6,12 @@ php:
 - 5.6
 
 before_script:
-- composer install --dev --no-interaction
+- composer install --no-interaction
 
 script: phpunit --coverage-text
 
 notifications:
   slack:
-    secure: Qy8KWDhvnbV12AvG+n4o1dZznSDivaNq/HK24rrB7UdXfK9+EPbeh1IL04ZnlPrKFSqkMLUUKMQ296OTxghfvxb0FQZzcUfgHtiy8nLPOFUjPmz/f7fBIqHpbWbpJy+H61lbi7Zm9r7RYgtsd/rxSTuu5CtrX3iVynlmYV7V9I4=
+    rooms:
+    - { secure: lF/x8eG+boJyv6Gap4lGsH4ucgxyC+LD2HpnRLkFZAbmT5RRk25i2akCY2K4jnyhlwXJludFvvCF8ru4X4ZrbzAQ6dlj2tjoAvUq/zTdK/8fAtjQjzjRYDlDNbQJueAN05qz1uENMIExxyvx9MgbJUgJebZ612YmJuzIhHI8TEs= }
+    # on_success: never
