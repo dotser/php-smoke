@@ -1,6 +1,6 @@
 {
   "name": "dotser/php-smoke",
-  "description": "Boilerplate structuture for PHP libraries",
+  "description": "Boilerplate for PHP libraries",
   "keywords": [
     "php",
     "library",
