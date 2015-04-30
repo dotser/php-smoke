@@ -8,3 +8,8 @@ before_script:
   - composer install --dev --no-interaction
 
 script: phpunit --coverage-text
+
+notifications:
+  slack:
+    rooms:
+      - dotser:rbm09KPy8x15c8XABx0w5ZgX#notifications
