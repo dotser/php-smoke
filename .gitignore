@@ -1,2 +1,4 @@
 composer.lock
+build/
 vendor/
+build.properties

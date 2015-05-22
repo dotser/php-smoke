@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <parser>
+    <target>build/cache</target>
+    <extensions>
+      <extension>php</extension>
+    </extensions>
+  </parser>
+  <files>
+    <directory>src</directory>
+    <!--
+    <ignore>build/*</ignore>
+    <ignore>test/*</ignore>
+    <ignore>vendor/*</ignore>
+    -->
+  </files>
+  <transformer>
+      <target>build/docs</target>
+  </transformer>
+
+  <transformations>
+    <template name="responsive"/>
+  </transformations>
+</phpdoc>

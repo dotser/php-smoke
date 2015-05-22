@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+  <target name="docs"
+    description="Compiles and shows the documentation."
+    depends="docs:compile,docs:show">
+  </target>
+
+  <target name="docs:compile"
+    description="Generates the internal API documentation.">
+    <exec executable="vendor/phpdocumentor/phpdocumentor/bin/phpdoc" failonerror="true"></exec>
+  </target>
+
+  <!--
+  <target name="docs:deploy"
+    description="Pushes live the internal API documentation">
+    <exec executable="rsync" dir="." failonerror="true">
+      <arg value="-r"/>
+      <arg value="build/docs/"/>
+      <arg value="${docs.deploy.user}@${docs.deploy.host}:${docs.deploy.path}"/>
+      <arg value="-vz"/>
+    </exec>
+  </target>
+  -->
+
+  <target name="docs:show"
+    description="Browses the internal API documentation.">
+    <exec executable="open" failonerror="true">
+      <arg value="http://localhost:7000/"/>
+    </exec>
+    <exec executable="php" dir="build/docs" failonerror="true">
+      <arg value="-S"/>
+      <arg value="localhost:7000"/>
+    </exec>
+  </target>
+
+</project>
