@@ -3,6 +3,8 @@ parameters:
   git_dir: "."
   tasks:
     phpcs:
-      standard: PSR2
+      standard: "PSR2"
+      ignore_patterns:
+      - "PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"
     phpspec: ~
     phpunit: ~
