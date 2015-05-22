@@ -4,7 +4,6 @@
  */
 namespace Smoke;
 
-
 /**
  * Be friendly with people and greet them
  *
@@ -24,5 +23,4 @@ class Greeting
     {
         return "Hello ${name}!";
     }
-
 }

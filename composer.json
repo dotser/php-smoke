@@ -7,11 +7,14 @@
     "boilerplate"
   ],
   "require": {
-    "php": ">=5.4",
-    "phpdocumentor/phpdocumentor": "2.*"
+    "php": ">=5.4"
   },
   "require-dev": {
-    "phpunit/phpunit": "4.*"
+    "phpro/grumphp": "*",
+    "phpunit/phpunit": "4.*",
+    "phpdocumentor/phpdocumentor": "2.*",
+    "phpspec/phpspec": "~2.0",
+    "squizlabs/php_codesniffer": "2.*"
   },
   "autoload": {
     "psr-0": {

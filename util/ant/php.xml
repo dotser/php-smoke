@@ -37,7 +37,7 @@
 
   <target name="php:test"
     description="Run PHP tests.">
-    <exec executable="${basedir}/vendor/phpunit/phpunit/phpunit"
+    <exec executable="${basedir}/vendor/bin/phpunit"
       failonerror="true">
     </exec>
   </target>
