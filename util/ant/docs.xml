@@ -8,7 +8,7 @@
 
   <target name="docs:compile"
     description="Generates the internal API documentation.">
-    <exec executable="vendor/phpdocumentor/phpdocumentor/bin/phpdoc" failonerror="true"></exec>
+    <exec executable="${basedir}/vendor/phpdocumentor/phpdocumentor/bin/phpdoc" failonerror="true"></exec>
   </target>
 
   <target name="docs:deploy"

@@ -11,12 +11,19 @@
   -->
   <property file="${properties.file}"/>
 
-  <import file="util/ant/docs.xml"/>
-
   <target name="help" description="Show available commands" >
     <exec executable="ant" dir="." failonerror="true">
       <arg value="-p"/>
     </exec>
   </target>
+
+  <target name="clean" description="Remove all build directories" >
+    <delete includeEmptyDirs="true">
+      <fileset dir="build"/>
+    </delete>
+  </target>
+
+  <import file="util/ant/php.xml"/>
+  <import file="util/ant/docs.xml"/>
 
 </project>
