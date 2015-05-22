@@ -2,11 +2,13 @@
 <project name="PHP Smoke" default="help" basedir=".">
 
   <property name="properties.file" value="build.properties"/>
+  <!--
   <fail message="${properties.file} does not exist.">
     <condition>
       <not><available file="${properties.file}"/></not>
     </condition>
   </fail>
+  -->
   <property file="${properties.file}"/>
 
   <import file="util/ant/docs.xml"/>
