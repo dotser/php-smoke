@@ -3,6 +3,6 @@ parameters:
   git_dir: "."
   tasks:
     phpcs:
-      standard: "PEAR"
+      standard: "PSR2"
     phpspec: ~
     phpunit: ~
