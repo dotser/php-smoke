@@ -8,11 +8,6 @@
   </parser>
   <files>
     <directory>src</directory>
-    <!--
-    <ignore>build/*</ignore>
-    <ignore>test/*</ignore>
-    <ignore>vendor/*</ignore>
-    -->
   </files>
   <transformer>
       <target>build/docs</target>
