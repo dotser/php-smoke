@@ -4,5 +4,7 @@ parameters:
   tasks:
     phpcs:
       standard: "./phpcs.xml"
+      ignore_patterns:
+      - PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter
     phpspec: ~
     phpunit: ~
